@@ -19,13 +19,13 @@ git clone https://github.com/wjbianjason/Dynamic-Clip-Attention
 
 I have uploaded my prepocess result of dataset, you can repeat the procedure as follow:
 <br/>
-### WikiQA Preprocess
+#### WikiQA Preprocess
 **Note**: dowload \"WikiQACorpus.zip\" to the path "./data/raw_data/WikiQA/".
 >WikiQACorpus.zip download link: https://www.microsoft.com/en-us/download/details.aspx?id=52419
 ```
 sh preprocess.sh wikiqa
 ```
-### TrecQA Preprocess
+#### TrecQA Preprocess
 **Note**: If you don't have svn command, you can copy the directory [TrecQA_of_CIKM2016_Rao](https://github.com/castorini/NCE-CNN-Torch/tree/master/data/TrecQA) to our path "./data/raw_data/"
 ```
 sh preprocess.sh trecqa
@@ -41,7 +41,7 @@ usage: main.py [-h] [-t TASK] [-m MODEL] [-d HIDDEN_DIM] [-e EPOCH] [-l LR]
                [-r RANDOM_SIZE]
 ```
 
-### WikiQA
+#### WikiQA
 Basic approach: **listwise**
 ```
 python main.py -t wikiqa -m listwise -d 300 -e 10 -l 0.001 -b 5 -r 15
@@ -59,7 +59,7 @@ python main.py -t wikiqa -m k_threshold -d 300 -e 5 -l 0.001 -b 3 -r 15 -k_q 0.1
 ```
 
 
-### TrecQA
+#### TrecQA
 Basic approach: **listwise**
 ```
 python main.py -t trecqa -m listwise -d 300 -e 10 -l 0.001 -b 3 -r 50
