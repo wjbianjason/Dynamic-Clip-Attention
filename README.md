@@ -19,14 +19,14 @@ git clone https://github.com/wjbianjason/Dynamic-Clip-Attention
 
 I have uploaded my prepocess result of dataset, you can repeat the procedure as follow:
 <br/>
-###WikiQA Preprocess
-*Note*: dowload \"WikiQACorpus.zip\" to the path "./data/raw_data/WikiQA/".
+### WikiQA Preprocess
+**Note**: dowload \"WikiQACorpus.zip\" to the path "./data/raw_data/WikiQA/".
 ```
 #WikiQACorpus.zip download link: https://www.microsoft.com/en-us/download/details.aspx?id=52419
 sh preprocess.sh wikiqa
 ```
-###TrecQA Preprocess
-*Note*: If you don't have svn command, you can copy the directory [TrecQA_of_CIKM2016_Rao](https://github.com/castorini/NCE-CNN-Torch/tree/master/data/TrecQA) to our path "./data/raw_data/"
+### TrecQA Preprocess
+**Note**: If you don't have svn command, you can copy the directory [TrecQA_of_CIKM2016_Rao](https://github.com/castorini/NCE-CNN-Torch/tree/master/data/TrecQA) to our path "./data/raw_data/"
 ```
 sh preprocess.sh trecqa
 ```
@@ -41,37 +41,37 @@ usage: main.py [-h] [-t TASK] [-m MODEL] [-d HIDDEN_DIM] [-e EPOCH] [-l LR]
                [-r RANDOM_SIZE]
 ```
 
-###WikiQA
-Basic approach: *listwise*
+### WikiQA
+Basic approach: **listwise**
 ```
 python main.py -t wikiqa -m listwise -d 300 -e 10 -l 0.001 -b 5 -r 15
 ```
-*Note*: k_max and k_threshold need basic approach trained model to init weights.
+**Note**: k_max and k_threshold need basic approach trained model to init weights.
 So please running basic approach first.
 <br/>
-Second approach: *k_max*
+Second approach: **k_max**
 ```
 python main.py -t wikiqa -m k_max -d 300 -e 5 -l 0.001 -b 3 -r 15 -k_q 5 -k_a 10
 ```
-Third approach: *k_threshold*
+Third approach: **k_threshold**
 ```
 python main.py -t wikiqa -m k_threshold -d 300 -e 5 -l 0.001 -b 3 -r 15 -k_q 0.1 -k_a 0.05
 ```
 
 
-###TrecQA
-Basic approach: *listwise*
+### TrecQA
+Basic approach: **listwise**
 ```
 python main.py -t trecqa -m listwise -d 300 -e 10 -l 0.001 -b 3 -r 50
 ```
-*Note*: k_max and k_threshold need basic approach trained model to init weights.
+**Note**: k_max and k_threshold need basic approach trained model to init weights.
 So please running basic approach first.
 <br/>
-Second approach: *k_max*
+Second approach: **k_max**
 ```
 python main.py -t trecqa -m k_max -d 300 -e 5 -l 0.001 -b 3 -r 50 -k_q 5 -k_a 10
 ```
-Third approach: *k_threshold*
+Third approach: **k_threshold**
 ```
 python main.py -t trecqa -m k_threshold -d 300 -e 5 -l 0.001 -b 3 -r 50 -k_q 0.1 -k_a 0.05
 ```
