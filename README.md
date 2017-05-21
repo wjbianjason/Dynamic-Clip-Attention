@@ -21,8 +21,8 @@ I have uploaded my prepocess result of dataset, you can repeat the procedure as 
 <br/>
 ### WikiQA Preprocess
 **Note**: dowload \"WikiQACorpus.zip\" to the path "./data/raw_data/WikiQA/".
+>WikiQACorpus.zip download link: https://www.microsoft.com/en-us/download/details.aspx?id=52419
 ```
-#WikiQACorpus.zip download link: https://www.microsoft.com/en-us/download/details.aspx?id=52419
 sh preprocess.sh wikiqa
 ```
 ### TrecQA Preprocess
@@ -79,9 +79,9 @@ python main.py -t trecqa -m k_threshold -d 300 -e 5 -l 0.001 -b 3 -r 50 -k_q 0.1
 ## Results
 -------
 In all experiments, we selected training models that obtain the best MAP scores on the development set for testing.
-<br\>
+<br/>
 You should be able to reproduce some scores close to the numbers in the experiment table of our paper.
-<br\>
+<br/>
 If you want to reproduce the same score, you need to use the following command:
 ```
 THEANO_FLAGS="dnn.conv.algo_bwd_filter=deterministic,dnn.conv.algo_bwd_data=deterministic" python
