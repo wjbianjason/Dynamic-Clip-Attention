@@ -89,4 +89,4 @@ which makes the cuDNN's backward pass is deterministic. This is a reproduce prob
 
 
 ## Copyright
-Copyright 2017 PRIS of BUPT. All Rights Reserved.
+Copyright Author @wjbianjason. All Rights Reserved.
