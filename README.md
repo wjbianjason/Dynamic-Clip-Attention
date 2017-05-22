@@ -17,7 +17,7 @@ First, you need to install dependencies, then clone this repo:
 git clone https://github.com/wjbianjason/Dynamic-Clip-Attention
 ```
 
-I have uploaded my prepocess result of dataset, you can repeat the procedure as follow:
+I have uploaded my prepocess result of WikiQA, you can repeat the procedure as follow:
 <br/>
 ### WikiQA Preprocess
 **Note**: dowload \"WikiQACorpus.zip\" to the path "./data/raw_data/WikiQA/".
@@ -31,7 +31,7 @@ sh preprocess.sh wikiqa
 sh preprocess.sh trecqa
 ```
 
-Because I have uploaded my preprocess data, you can skip above operations.
+Because I have uploaded my preprocess data of WikiQA, if you want to cast a glance at our model, you can skip above operations.
 
 ## Running
 
