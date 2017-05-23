@@ -55,7 +55,7 @@ python main.py -t wikiqa -m k_max -d 300 -e 5 -l 0.001 -b 5 -k_q 5 -k_a 10 -p 5
 ```
 Third approach: **k_threshold**
 ```
-python main.py -t wikiqa -m k_threshold -d 300 -e 4 -l 0.001 -b 5 -k_q 0.08 -k_a 0.08 -p 1
+python main.py -t wikiqa -m k_threshold -d 300 -e 4 -l 0.001 -b 6 -k_q 0.08 -k_a 0.08 -p 1
 ```
 
 
