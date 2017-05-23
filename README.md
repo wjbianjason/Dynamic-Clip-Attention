@@ -72,6 +72,7 @@ Second approach: **k_max**
 python main.py -t trecqa -m k_max -d 300 -e 5 -l 0.001 -b 3 -k_q 3 -k_a 16 -p 5
 ```
 Third approach: **k_threshold**
+<br/>
 **Note**: -1 represents the reciprocal of answer length
 ```
 python main.py -t trecqa -m k_threshold -d 300 -e 5 -l 0.001 -b 3 -k_q -1 -k_a 0.06
